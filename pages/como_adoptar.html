@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Como adoptar</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../assets/img/logo.jpeg" alt="Imagen logo" id="logop">
+        </a>
+        <h1> Huellitas en casa</h1>
+
+        <nav>
+            <ul class="indice">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./perros.html">Perros</a></li>
+                <li><a href="./gatos.html">Gatos</a></li>
+                <li><a href="./como_adoptar.html">Como adoptar</a></li>
+                <li><a href="./testimonios.html">Testimonios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Como adoptar:</h2>
+        <section class="form-container">
+            <form action="direccion" method="metodo de envio">
+                <div class="mb-4">
+                    <label class="form-label">Nombre:</label> <input type="text" class="form-control" placeholder="John Doe">
+                </div>
+
+                <div class="mb-4"> 
+                    <label class="form-label">Edad:</label> <input type="number" class="form-control" placeholder="24">
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Barrio:</label>
+                    <select class="form-select" name="" id="">
+                        <option selected value="">Selecciona</option>
+                        <option value="">Palermo</option>
+                        <option value="">Recoleta</option>
+                        <option value="">San Telmo</option>
+                        <option value="">La Boca</option>
+                        <option value="">Puerto Madero</option>
+                        <option value="">Microcentro</option>
+                        <option value="">Caballito</option>
+                        <option value="">Belgrano</option>
+                        <option value="">Almagro</option>
+                        <option value="">Villa Crespo</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Mail:</label> <input type="email" class="form-control" placeholder="johndoe@email.com">
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Teléfono:</label> <input type="number" class="form-control" placeholder="1123456789">
+                </div>
+
+                <div class="mb-4">
+                    <p>Tenés mascotas en casa?</p>
+                    <label>Si</label> <input type="radio" name="otrasmascotas" value="si">
+                    <label>No</label> <input type="radio" name="otrasmascotas" value="no">
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">En caso de que si, que mascota tenés?</label> <input class="form-control" type="text" placeholder="Perro mestizo raza grande, 11 años">
+                </div>
+
+                <div class="mb-4">
+                    <p>En caso de que no, tuviste mascotas anteriormente?</p>
+                    <label>Si</label> <input type="radio" name="mascotasantes" value="si">
+                    <label>No</label> <input type="radio" name="mascotasantes" value="no">
+                </div>
+
+                <div class="mb-4">
+                    <p>Estás dispuesta/o a castrar a tu mascota cuando cumpla el tiempo requerido?</p>
+                    <label>Si</label> <input type="radio" name="castrar">
+                    <label>No</label> <input type="radio" name="castrar">
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Contános, por qué te gustaría adoptar?</label> <textarea class="form-control"></textarea>
+                </div>
+
+                <p><strong>Alguien de nuestro equipo va a evaluar la informacion enviada y se pondrá en contacto contigo a la brevedad.</strong></p>
+
+                <input type="submit" value="Enviar" class="w-50">
+
+        </section>
+    </main>
+
+    <footer class="py-4">
+        <section class="container">
+            <article class="row text-center justify-content-center mb-3">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                    <h3 class="footer-title">Enlaces de interes:</h3>
+                    <a href="https://www.infobae.com/sociedad/2024/07/27/dia-del-perro-callejero-una-ong-estima-que-en-la-argentina-hay-mas-de-20-millones-de-animales-que-viven-en-las-calles/" target="_blank">Día del perro callejero.</a>
+                </div>
+                <div class="col-12 col-md-5">
+                    <h3 class="footer-title">Redes sociales:</h3>
+                    <a href="https://www.instagram.com/explore/search/keyword/q=refugios%20de%20animales" target="_blank"> <img src="../assets/img/instagram.png" alt="Logo Instagram" class="logo-red"></a>
+
+                    <a href="https://www.facebook.com/search/top/?q=refugios%20de%20animales" target="_blank"> <img src="../assets/img/facebook.jpg" alt="Logo facebook" class="logo-red"><a>
+                </div>
+            </article>
+
+            <article class="row">
+                <div class="col text-center">
+                    <h3 class="footer-title">Contacto: <a href="mailto:huellitas@en-casa.com" target="_blank">huellitas@en-casa.com</a></h3>
+                </div>
+            </article>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+/* 
+
+*/
+
+
+#logop {
+    width: 50px;
+    height: 50px;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(245, 245, 220, 0.925);
+    position: sticky;
+}
+
+.indice {
+    display: flex;
+    width: 60vh;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* Títulos */
+
+h1 {
+    color: rgb(66, 6, 6);
+}
+
+h2 {
+    color: rgb(79, 42, 7);
+    font-size: xx-large;
+}
+
+h3 {
+    color: rgb(27, 160, 217);
+    font-size: 30px;
+}
+
+/* Contenido */ 
+
+body {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 17px;
+    
+    color: rgb(15, 13, 13);
+}
+
+main {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* MAPA A DEFINIR 
+.map {
+    display: flex;
+    justify-content: center;
+} */
+
+/* Medidas testimonios */
+
+.imagenes-noa {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.noa-dog{
+    width: 350px;
+    height: auto;
+}
+
+/* Medidas para pet boxes */
+
+.pet-boxes
+{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex; gap: 60px;
+    width: 400px;
+    height: auto;
+}
+
+.pet-img {
+    display: flex; gap: 30px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 1rem;
+}
+
+.pet-box {
+    outline-style: groove;
+    outline-color: rgb(8, 8, 101);
+    outline-offset: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Formulario adopcion */
+
+.form-container {
+    border: 2px solid rgb(8, 8, 101);
+    padding: 10px;
+    width: auto;
+    border-radius: 8px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+/* Footer config */ 
+
+footer {
+    background-color: rgba(245, 245, 220, 0.925);
+    padding: 15px;
+    
+}
+
+.footer-title {
+    color: rgb(9, 15, 122);
+    font-size: 16px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 7rem;
+} 
+
+.logo-red {
+    height: 25px;
+}
+
+@media (max-width: 430px) {
+    header {
+        flex-direction: column;
+        .indice { 
+            font-size: 14px;
+            text-align: center;
+            width: auto;
+            gap: 1em;  
+        }
+        a, a:visited {
+            text-decoration: none;}
+        }
+
+    main {
+        margin-top: 1em;
+        width: 90%;
+    }
+
+    .form-container {
+        margin-right: auto;
+    }
+
+    .imagenes-noa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pet-boxes {
+        flex-direction: column;
+        outline-offset: 10px;
+        margin-left: 1em;
+    }
+
+    .pet-box {
+        width: 90%;
+        height: auto;
+    
+    }
+
+    .pet-img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        .footer-links {
+        flex-wrap: wrap;
+        gap: 2em;
+        }
+    }
+}
+
+
