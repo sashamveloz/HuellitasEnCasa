@@ -37,6 +37,7 @@ h1 {
 h2 {
     color: rgb(79, 42, 7);
     font-size: xx-large;
+    align-self: flex-start;
 }
 
 h3 {
@@ -72,29 +73,37 @@ main {
     height: auto;
 }
 
-/* Medidas para pet boxes */
+/* Medidas pet boxes*/
 
-.pet-boxes
-{
-    margin-top: 2rem;
-    margin-left: 2rem;
-    display: flex; gap: 60px;
-    width: 400px;
-    height: auto;
+.pet-boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pet-boxes section{
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.pet-boxes section article{
+    width: 30vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    border: groove rgb(8, 8, 101);
+    padding: 10px;
 }
 
 .pet-img {
-    display: flex; gap: 30px;
-    width: 400px;
-    height: 400px;
-    margin-bottom: 1rem;
-}
-
-.pet-box {
-    outline-style: groove;
-    outline-color: rgb(8, 8, 101);
-    outline-offset: 20px;
-    margin-bottom: 2rem;
+    width: 50vh;
+    height: auto;
+    align-self: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 /* Formulario adopcion */
@@ -135,6 +144,7 @@ footer {
     header {
         flex-direction: column;
         .indice { 
+            margin-block-start: none;
             font-size: 14px;
             text-align: center;
             width: auto;
@@ -158,22 +168,22 @@ footer {
         align-items: center;
     }
 
-    .pet-boxes {
+    .pet-boxes section {
+        display: flex;
         flex-direction: column;
         outline-offset: 10px;
-        margin-left: 1em;
-        width: 400px;
+        gap: 15px;
     }
 
-    .pet-box {
-        width: 400px;
+    .pet-boxes section article {
+        width: 100%;
         height: auto;
-    
+        box-sizing: border-box;
+        padding: 1rem;
     }
 
     .pet-img {
         width: 100%;
-        height: auto;
     }
 
     footer {
@@ -186,7 +196,7 @@ footer {
 
 /* Pendiente de perfeccionar */
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     header {
         flex-direction: column;
         .indice { 
@@ -201,7 +211,20 @@ footer {
 
     main {
         margin-top: 1em;
-        width: 90%;
+        width: 100%;
+    }
+
+    .pet-boxes section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pet-boxes section article {
+        width: auto;
+    }
+
+    .pet-img {
+        width: 60vw;
     }
 
     .form-container {
@@ -211,23 +234,6 @@ footer {
     .imagenes-noa {
         flex-direction: column;
         align-items: center;
-    }
-
-    .pet-boxes {
-        flex-direction: column;
-        outline-offset: 10px;
-        margin-left: 1em;
-    }
-
-    .pet-box {
-        width: 90%;
-        height: auto;
-    
-    }
-
-    .pet-img {
-        width: 100%;
-        height: auto;
     }
 
     footer {
