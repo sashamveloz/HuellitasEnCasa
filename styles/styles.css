@@ -99,7 +99,7 @@ main {
 }
 
 .pet-img {
-    width: 50vh;
+    width: 300px;
     height: auto;
     align-self: center;
     margin-top: 2vh;
@@ -196,7 +196,7 @@ footer {
     }
 
     .pet-img {
-        width: 50vh;
+        width: 300px;
         height: auto;
         align-self: center;
         margin-top: 2vh;
@@ -259,7 +259,7 @@ footer {
     }
 
     .pet-img {
-        width: 50vh;
+        width: 300px;
         height: auto;
         align-self: center;
         margin-top: 2vh;
