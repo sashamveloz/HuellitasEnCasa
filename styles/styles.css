@@ -250,6 +250,7 @@ footer {
         justify-content: space-around;
         align-items: center;
         margin: 10px;
+        margin-left: auto;
     }
 
     .pet-boxes section article{
