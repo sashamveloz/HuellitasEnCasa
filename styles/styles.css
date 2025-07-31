@@ -1,7 +1,3 @@
-/* 
-
-*/
-
 
 #logop {
     width: 50px;
@@ -15,15 +11,17 @@ a, a:visited {
 header {
     padding: 20px;
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(245, 245, 220, 0.925);
-    position: sticky;
 }
 
 .indice {
     display: flex;
-    width: 60vh;
+    width: 100%;
+    gap: 1rem;
     justify-content: space-around;
     list-style: none;
 }
@@ -50,8 +48,8 @@ h3 {
 body {
     font-family: "Roboto Flex", sans-serif;
     font-size: 17px;
-    background-color: rgba(249, 236, 211, 0.459);
-    color: rgb(15, 13, 13);
+    background-color: rgba(245, 239, 230, 0.214);
+    color: rgb(37, 12, 12);
 }
 
 main {
@@ -71,6 +69,7 @@ main {
 .noa-dog{
     width: 350px;
     height: auto;
+    border-radius: 30px;
 }
 
 /* Medidas pet boxes*/
@@ -85,7 +84,7 @@ main {
     display: flex;
     width: 95vw;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     margin: 10px;
 }
 
@@ -93,7 +92,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 50vw;
     border: groove rgb(8, 8, 101);
     padding: 10px;
 }
@@ -104,6 +102,7 @@ main {
     align-self: center;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    border-radius: 30px;
 }
 
 /* Formulario adopcion */
@@ -228,10 +227,14 @@ footer {
 
     main {
         margin-top: 1em;
-        width: 100%;
+        width: 90%;
     }
 
-    /* Medidas oet boxes */
+    .form-container {
+        margin-right: auto;
+    }
+
+    /* Medidas pet boxes */
     
     .pet-boxes{
         display: flex;
@@ -264,10 +267,6 @@ footer {
         align-self: center;
         margin-top: 2vh;
         margin-bottom: 2vh;
-    }
-
-    .form-container {
-        margin-right: auto;
     }
 
     .imagenes-noa {
