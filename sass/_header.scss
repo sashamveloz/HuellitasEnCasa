@@ -1,0 +1,48 @@
+@use 'variables' as v;
+
+header {
+    padding: 20px;
+    background-color: v.$back-col;
+    position: sticky;
+    top: 0;
+    margin-bottom: 1rem;
+    
+    @extend %flr;
+
+    #logop {
+        width: 50px;
+        height: 50px;
+    }
+    .indice {
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        justify-content: space-around;
+        list-style: none;
+    }
+    a, a:visited {
+        text-decoration: none;;
+    }
+
+    @include v.mobile {
+        flex-direction: column;
+        .indice { 
+            font-size: 14px;
+            text-align: center;
+            width: auto;
+            gap: 1em;  
+        }
+        a, a:visited {
+            text-decoration: none;}
+        }
+
+    @include v.tablet {
+        flex-direction: column;
+        .indice { 
+            font-size: 14px;
+            text-align: center;
+            width: auto;
+            gap: 1em; 
+        }
+    }
+}

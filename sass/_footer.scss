@@ -1,0 +1,49 @@
+@use 'variables' as v;
+
+footer {
+    background-color: v.$back-col;
+    padding: 15px;
+
+    .footer-title {
+        color: rgb(9, 15, 122);
+        font-size: 16px;
+    }
+    .logo-red {
+        height: 25px;
+        width: auto;
+    }
+    .wpp {
+        height: 45px;
+        width: auto;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        animation: wpp 4s infinite;
+    }
+
+    @include v.mobile {
+            .wpp{
+                height: 35px;
+                position: fixed;
+                bottom: 25px;
+                right: 25px;
+        }
+    }
+
+    @include v.tablet {
+            .wpp{
+                height: 40px;
+                position: fixed;
+                bottom: 25px;
+                right: 25px;
+        }
+    }
+    @include v.laptop {
+        .wpp {
+            height: 40px;
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+        }
+    }
+}

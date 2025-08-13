@@ -1,0 +1,60 @@
+@use 'variables' as v;
+@use 'home';
+@use 'mascotas';
+@use 'como-adoptar';
+@use 'testimonios';
+@use 'header';
+@use 'footer';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 239, 230, 0.214);
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 17px;
+    color: rgb(37, 12, 12);
+    
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    color: rgb(66, 6, 6);
+}
+
+h2 {
+    color: rgb(79, 42, 7);
+    font-size: xx-large;
+    align-self: flex-start;
+}
+
+h3 {
+    color: rgb(27, 160, 217);
+    font-size: 30px;
+}
+
+main {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 98%;
+
+    @include v.mobile {
+        margin-top: 1em;
+        width: 92%;
+    
+    }
+
+    @include v.tablet {
+        margin-top: 1em;
+        width: 92%;
+        
+    }
+}
+

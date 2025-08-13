@@ -1,285 +1,293 @@
-
-#logop {
-    width: 50px;
-    height: 50px;
+@keyframes wpp {
+  0% {
+    transform: translate(0);
+  }
+  5% {
+    transform: translate(50px);
+  }
+  10% {
+    transform: translate(0);
+  }
+  15% {
+    transform: translate(50px);
+  }
+  20% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
-
-a, a:visited {
-    text-decoration: none;
-}
-
 header {
-    padding: 20px;
-    display: flex;
-    position: sticky;
-    top: 0;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(245, 245, 220, 0.925);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.indice {
-    display: flex;
-    width: 100%;
-    gap: 1rem;
-    justify-content: space-around;
-    list-style: none;
+.pet-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-/* Títulos */
-
-h1 {
-    color: rgb(66, 6, 6);
+.pet-boxes section {
+  display: flex;
+  width: 95vw;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 10px;
 }
-
-h2 {
-    color: rgb(79, 42, 7);
-    font-size: xx-large;
-    align-self: flex-start;
+.pet-boxes article {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  border: groove rgb(8, 8, 101);
+  padding: 10px;
 }
-
-h3 {
-    color: rgb(27, 160, 217);
-    font-size: 30px;
-}
-
-/* Contenido */ 
-
-body {
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 17px;
-    background-color: rgba(245, 239, 230, 0.214);
-    color: rgb(37, 12, 12);
-}
-
-main {
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 98%;
-}
-
-
-.imagenes-noa {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.noa-dog{
-    width: 350px;
-    height: auto;
-    border-radius: 30px;
-}
-
-/* Medidas pet boxes*/
-
-.pet-boxes{
+@media (max-width: 430px) {
+  .pet-boxes {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.pet-boxes section{
+  }
+  .pet-boxes section {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
     width: 95vw;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
     margin: 10px;
-}
-
-.pet-boxes section article{
+  }
+  .pet-boxes article {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 100%;
+    height: auto;
     border: groove rgb(8, 8, 101);
     padding: 10px;
+  }
 }
-
-.pet-img {
-    width: 300px;
+@media (min-width: 431px) and (max-width: 768px) {
+  .pet-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pet-boxes section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 95vw;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+  }
+  .pet-boxes article {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
     height: auto;
+    border: groove rgb(8, 8, 101);
+    padding: 10px;
+  }
+}
+.pet-boxes .pet-img {
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+@media (max-width: 430px) {
+  .pet-boxes .pet-img {
+    height: auto;
+    width: 90%;
     align-self: center;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    border-radius: 30px;
+  }
 }
-
-/* Formulario adopcion */
+@media (min-width: 431px) and (max-width: 768px) {
+  .pet-boxes .pet-img {
+    height: auto;
+    width: 60%;
+    align-self: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
 
 .form-container {
-    border: 2px solid rgb(8, 8, 101);
-    padding: 10px;
-    width: auto;
-    border-radius: 8px;
-    margin-right: 1rem;
-    margin-top: 1rem;
+  border: 2px solid rgb(8, 8, 101);
+  padding: 10px;
+  width: auto;
+  border-radius: 8px;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }
 
-/* Footer config */ 
+.imagenes-noa {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 430px) {
+  .imagenes-noa {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 431px) and (max-width: 768px) {
+  .imagenes-noa {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.imagenes-noa .noa-dog {
+  width: 350px;
+  height: auto;
+  border-radius: 30px;
+}
+
+header {
+  padding: 20px;
+  background-color: rgba(245, 245, 220, 0.925);
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+}
+header #logop {
+  width: 50px;
+  height: 50px;
+}
+header .indice {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: space-around;
+  list-style: none;
+}
+header a, header a:visited {
+  text-decoration: none;
+}
+@media (max-width: 430px) {
+  header {
+    flex-direction: column;
+  }
+  header .indice {
+    font-size: 14px;
+    text-align: center;
+    width: auto;
+    gap: 1em;
+  }
+  header a, header a:visited {
+    text-decoration: none;
+  }
+}
+@media (min-width: 431px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header .indice {
+    font-size: 14px;
+    text-align: center;
+    width: auto;
+    gap: 1em;
+  }
+}
 
 footer {
-    background-color: rgba(245, 245, 220, 0.925);
-    padding: 15px;
-    
+  background-color: rgba(245, 245, 220, 0.925);
+  padding: 15px;
+}
+footer .footer-title {
+  color: rgb(9, 15, 122);
+  font-size: 16px;
+}
+footer .logo-red {
+  height: 25px;
+  width: auto;
+}
+footer .wpp {
+  height: 45px;
+  width: auto;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  animation: wpp 4s infinite;
+}
+@media (max-width: 430px) {
+  footer .wpp {
+    height: 35px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+  }
+}
+@media (min-width: 431px) and (max-width: 768px) {
+  footer .wpp {
+    height: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer .wpp {
+    height: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+  }
 }
 
-.footer-title {
-    color: rgb(9, 15, 122);
-    font-size: 16px;
+html, body {
+  height: 100%;
 }
 
-.footer-links {
-    display: flex;
-    gap: 7rem;
-} 
-
-.logo-red {
-    height: 25px;
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(245, 239, 230, 0.214);
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 17px;
+  color: rgb(37, 12, 12);
 }
 
-@media (max-width: 425px) {
-
-    header {
-        flex-direction: column;
-        .indice { 
-            margin-block-start: none;
-            font-size: 14px;
-            text-align: center;
-            width: auto;
-            gap: 1em;  
-        }
-        a, a:visited {
-            text-decoration: none;}
-        }
-
-    main {
-        margin-top: 1em;
-        width: 90%;
-    }
-
-    .form-container {
-        margin-right: auto;
-    }
-
-    .imagenes-noa {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Medidas pet boxes*/
-
-    .pet-boxes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pet-boxes section{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 95vw;
-        justify-content: space-around;
-        align-items: center;
-        margin: 10px;
-    }
-
-    .pet-boxes section article{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        border: groove rgb(8, 8, 101);
-        padding: 10px;
-    }
-
-    .pet-img {
-        width: 300px;
-        height: auto;
-        align-self: center;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-    }
-
-        footer {
-            .footer-links {
-            flex-wrap: wrap;
-            gap: 2em;
-            }
-        }
-    }
-
-/* Pendiente de perfeccionar */
-
-@media (min-width: 426px) and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        .indice { 
-            font-size: 14px;
-            text-align: center;
-            width: auto;
-            gap: 1em;  
-        }
-        a, a:visited {
-            text-decoration: none;}
-        }
-
-    main {
-        margin-top: 1em;
-        width: 90%;
-    }
-
-    .form-container {
-        margin-right: auto;
-    }
-
-    /* Medidas pet boxes */
-    
-    .pet-boxes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pet-boxes section{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 95vw;
-        justify-content: space-around;
-        align-items: center;
-        margin: 10px;
-        margin-left: auto;
-    }
-
-    .pet-boxes section article{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        border: groove rgb(8, 8, 101);
-        padding: 10px;
-    }
-
-    .pet-img {
-        width: 300px;
-        height: auto;
-        align-self: center;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-    }
-
-    .imagenes-noa {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer {
-        .footer-links {
-        flex-wrap: wrap;
-        gap: 2em;
-        }
-    }
+main {
+  flex: 1;
 }
 
+h1 {
+  color: rgb(66, 6, 6);
+}
+
+h2 {
+  color: rgb(79, 42, 7);
+  font-size: xx-large;
+  align-self: flex-start;
+}
+
+h3 {
+  color: rgb(27, 160, 217);
+  font-size: 30px;
+}
+
+main {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 98%;
+}
+@media (max-width: 430px) {
+  main {
+    margin-top: 1em;
+    width: 92%;
+  }
+}
+@media (min-width: 431px) and (max-width: 768px) {
+  main {
+    margin-top: 1em;
+    width: 92%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

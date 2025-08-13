@@ -1,0 +1,93 @@
+@use 'variables' as v;
+
+.pet-boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        display: flex;
+        width: 95vw;
+        justify-content: space-around;
+        align-items: stretch;
+        margin: 10px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        border: groove rgb(8, 8, 101);
+        padding: 10px;
+    }
+
+    @include v.mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        section{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 95vw;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+        }
+        article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        border: groove rgb(8, 8, 101);
+        padding: 10px;
+        }
+    }
+
+    @include v.tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        section{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 95vw;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+        }
+
+        article{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: auto;
+        border: groove rgb(8, 8, 101);
+        padding: 10px;
+        }
+    }
+
+    .pet-img {
+        border-radius: 30px;
+        margin-bottom: 5px;
+
+    @include v.mobile {
+        height: auto;
+        width: 90%;
+        align-self: center;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    @include v.tablet {
+        height: auto;
+        width: 60%;
+        align-self: center;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        }
+    }
+}

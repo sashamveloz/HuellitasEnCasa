@@ -1,0 +1,22 @@
+@use 'variables' as v;
+
+.imagenes-noa {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+    @include v.mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+    @include v.tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+    .noa-dog{
+        width: 350px;
+        height: auto;
+        border-radius: 30px;
+    }
+}
