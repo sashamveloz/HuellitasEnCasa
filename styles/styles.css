@@ -92,25 +92,26 @@ header {
   }
 }
 .pet-boxes .pet-img {
+  padding: 10px;
   border-radius: 30px;
   margin-bottom: 5px;
 }
 @media (max-width: 430px) {
   .pet-boxes .pet-img {
+    padding: 5px;
     height: auto;
     width: 90%;
     align-self: center;
     margin-top: 2vh;
-    margin-bottom: 2vh;
   }
 }
 @media (min-width: 431px) and (max-width: 768px) {
   .pet-boxes .pet-img {
+    padding: 5px;
     height: auto;
     width: 60%;
     align-self: center;
     margin-top: 2vh;
-    margin-bottom: 2vh;
   }
 }
 

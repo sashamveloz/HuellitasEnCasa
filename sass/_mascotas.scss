@@ -71,23 +71,24 @@
     }
 
     .pet-img {
+        padding: 10px;
         border-radius: 30px;
         margin-bottom: 5px;
 
     @include v.mobile {
+        padding: 5px;
         height: auto;
         width: 90%;
         align-self: center;
         margin-top: 2vh;
-        margin-bottom: 2vh;
     }
 
     @include v.tablet {
+        padding: 5px;
         height: auto;
         width: 60%;
         align-self: center;
         margin-top: 2vh;
-        margin-bottom: 2vh;
         }
     }
 }
