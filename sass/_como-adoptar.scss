@@ -1,11 +1,26 @@
 @use 'variables' as v;
 
-
 .form-container {
     border: 2px solid rgb(8, 8, 101);
     padding: 10px;
-    width: auto;
+    width: 60%;
+    justify-self: center;
     border-radius: 8px;
     margin-right: 1rem;
     margin-top: 1rem;
+
+    @include v.mobile {
+        width: 100%;
+    }
+    @include v.tablet {
+        width: 80%;
+    }
+    .w-50 {
+        display: flex;
+        justify-self: center;
+    }
+}
+
+.titulo {
+    justify-self: center;
 }

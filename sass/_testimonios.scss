@@ -1,5 +1,8 @@
 @use 'variables' as v;
 
+.titulo {
+    justify-self: center;
+}
 .imagenes-noa {
     display: flex;
     justify-content: center;

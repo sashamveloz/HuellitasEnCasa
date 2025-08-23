@@ -20,9 +20,16 @@ header {
         justify-content: space-around;
         list-style: none;
     }
+    
     a, a:visited {
         text-decoration: none;;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 15px rgba(186, 186, 165, 0.925);
+    }
+
 
     @include v.mobile {
         flex-direction: column;

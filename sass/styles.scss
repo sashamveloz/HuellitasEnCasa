@@ -30,8 +30,12 @@ h1 {
 
 h2 {
     color: rgb(79, 42, 7);
-    font-size: xx-large;
-    align-self: flex-start;
+    font-size: 36px;
+    justify-self: flex-start;
+
+    @include v.mobile {
+        font-size: xx-large;
+    }
 }
 
 h3 {
@@ -41,7 +45,7 @@ h3 {
 
 main {
     margin-left: 1rem;
-    margin-top: 1rem;
+    
     margin-bottom: 1rem;
     width: 98%;
 

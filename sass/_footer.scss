@@ -11,7 +11,12 @@ footer {
     .logo-red {
         height: 25px;
         width: auto;
+        transition: transform 0.3s ease;
     }
+    .logo-red:hover {
+    transform: scale(1.20);
+    }
+
     .wpp {
         height: 45px;
         width: auto;
@@ -20,6 +25,7 @@ footer {
         right: 50px;
         animation: wpp 4s infinite;
     }
+    
 
     @include v.mobile {
             .wpp{
