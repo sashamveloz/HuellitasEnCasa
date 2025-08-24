@@ -1,13 +1,23 @@
 @use 'variables' as v;
 
+main {
+    display: grid;
+    flex-direction: column;
+
 .form-container {
     border: 2px solid rgb(8, 8, 101);
-    padding: 10px;
+    padding: 20px;
     width: 60%;
-    justify-self: center;
     border-radius: 8px;
     margin-right: 1rem;
     margin-top: 1rem;
+    justify-self: center;
+    display: grid;
+
+    .w-50 {
+        display: block;
+        margin: 1rem auto;
+    }
 
     @include v.mobile {
         width: 100%;
@@ -15,12 +25,8 @@
     @include v.tablet {
         width: 80%;
     }
-    .w-50 {
-        display: flex;
-        justify-self: center;
-    }
 }
-
 .titulo {
     justify-self: center;
+}
 }
